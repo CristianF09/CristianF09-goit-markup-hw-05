@@ -201,7 +201,7 @@ ul {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vh;
+  width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -209,7 +209,6 @@ ul {
 }
 
 .modal-content {
-  margin: 0 auto;
   padding: 16px;
   background-color: #fff;
   width: 50%;
@@ -225,6 +224,7 @@ ul {
   position: absolute;
   top: 24px;
   right: 24px;
+  border-color: #0000001A ;
 }
 
 /* -- Section1 -- */
@@ -498,5 +498,5 @@ ul {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.02em;
-  text-align: left;
+  text-align: center;
 }
