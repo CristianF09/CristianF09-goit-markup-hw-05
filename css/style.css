@@ -13,7 +13,8 @@
 
 ::after,
 ::before {
-  margin: 0;
+  margin-left: 0;
+  margin-right: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -67,11 +68,12 @@ main {
   line-height: 1.16;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--link-color_hover);
+  color: var(--logo-and-hover-color);
 }
 
-.logo span {
-  color: var(--logo-and-hover-color);
+.logo-header {
+  color: #2E2F42;
+  font-size: 21;
 }
 
 .nav-links {
@@ -136,11 +138,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(
-    rgba(46, 47, 66, 0.4),
-    rgba(46, 47, 66, 0.7)
-  );
-  background: url("../images/people-office 1.png");
+  background-image: linear-gradient(rgba(46, 47, 66, 0.4) , rgba(46, 47, 66, 0.7)), url("../images/people-office 1.png"); #2E2F42; 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -264,7 +262,7 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  text-align: center;
+  text-align: left;
 }
 
 .description-text {
@@ -276,10 +274,9 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  text-align: center;
+  text-align: left;
   margin-top: 10px;
-  display: flex;
-  justify-content: center;
+  display:flex;
 }
 
 /* -- Section 2 -- What are we do --*/
@@ -311,6 +308,8 @@ ul {
 .presentation-image {
   display: flex;
   gap: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .whatarewedo-image {
@@ -444,7 +443,7 @@ ul {
 .global-footer {
   background-color: var(--link-color_hover);
   padding-top: 112x;
-  padding-bottom: 264px;
+  padding-bottom: 164px;
 }
 
 .global-footer .container {
@@ -454,7 +453,13 @@ ul {
   top: 100px;
 }
 
-.studio span {
+.logo{ 
+  color: #4D5AE5;
+  font-size: 21;
+
+}
+
+ .logo-footer {
   color: #ffffff;
   width: 115px;
   height: 24px;
@@ -479,6 +484,19 @@ ul {
   color: #ffffff;
   display: flex;
   justify-content: center;
-  position: relative;
-  bottom: 200px;
+  align-items: center;
+  gap: 16px;
+}
+
+.social-media-title {
+  width: 96px;
+  height: 24px;
+  top: 2988px;
+  left: 540px;
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: left;
 }
