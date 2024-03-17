@@ -5,6 +5,7 @@
   --logo-and-hover-color: #4d5ae5;
   --font-family: "Roboto", sans-serif;
   --second-family: "Raleway", sans-serif;
+  --transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 * {
@@ -67,11 +68,12 @@ main {
   line-height: 1.16;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--link-color_hover);
+  color: var(--logo-and-hover-color);
 }
 
-.logo span {
-  color: var(--logo-and-hover-color);
+.logo-header {
+  color: #2e2f42;
+  font-size: 21;
 }
 
 .nav-links {
@@ -88,6 +90,10 @@ main {
   margin-left: auto;
   display: flex;
   gap: 30px;
+}
+
+.a {
+  transition: var(--transition);
 }
 
 .mail,
@@ -230,8 +236,47 @@ a:visited {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14);
 }
 
+.a {
+  transition: var(--transition);
+}
+
+/*-- Motto --*/
+
+.img-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 58px;
+  height: 300px;
+  width: 360px;
+  position: absolute;
+  background-color: #4d5ae5;
+  opacity: 0.7;
+  transform: translateY(101%) 250ms;
+  transition: cubic-bezier(0.4 0, 0.2, 1);
+}
+
+.overlay-text {
+  width: 296px;
+  height: 96px;
+  top: 80px;
+  left: 32px;
+  color: #ffffff;
+  font-family: var(var(--font-family));
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
 /* -- Project1 --*/
-.project1 {
+.project1- section {
   width: 1200px;
   height: 420px;
   top: 288px;
@@ -260,7 +305,7 @@ a:visited {
   color: var(--link-color_hover);
   width: 360px;
   height: 420px;
-  top: 288px;
+  top: 58px;
   left: 156px;
   padding: 0px, 0px, 32px, 0px;
   border: 1px solid #e7e9fc;
@@ -583,7 +628,12 @@ a:visited {
   top: 100px;
 }
 
-.studio span {
+.logo {
+  color: #4d5ae5;
+  font-size: 21;
+}
+
+.logo-footer {
   color: #ffffff;
   width: 115px;
   height: 24px;
